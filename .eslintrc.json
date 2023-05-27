@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+
+    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/vue3-strongly-recommended",
+
+    "standard-with-typescript"
+  ],
+  "parser": "vue-eslint-parser",
+  "overrides": [],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/restrict-plus-operands": "error"
+  },
+  "root": true
+}
